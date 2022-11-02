@@ -5,4 +5,7 @@
 # sum_to(10) # returns 55
 
 def sum_to(n):
-  return 
+  result = sum(range(n + 1))
+  print(result)
+
+sum_to(10)
