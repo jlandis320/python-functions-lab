@@ -32,8 +32,24 @@ def largest(nums):
       # occurrences('fleep floop', 'ee')  # returns 1
       # occurrences('fleep floop', 'fe')  # returns 0
 
-
 def occurrences(str1, str2):
   return str1.count(str2)
 
-print(occurrences('fleep floop', 'fe'))
+# print(occurrences('fleep floop', 'fe'))
+
+# 4. Write a function named `product` that takes an *arbitrary* number of numbers, multiplies them all together, and returns the product. HINT: Review your notes on `args`.
+    
+#     For example:
+    
+#     product(-1, 4) # returns -4
+#     product(2, 5, 5) # returns 50
+#     product(4, 0.5, 5) # returns 10.0
+
+def product(*args):
+  product = 1
+  for num in args:
+    product *= num
+  return product
+
+print(product(4, 0.5, 5))
+
